@@ -9,7 +9,12 @@ Within the py3SEB-UAV framework, there are three different formulations that can
 2. **Dual Temperature (3SEB-2T)**
 3. **Triple Temperature (3SEB-3T)**
 
-These formulations differ in how the intercrop canopy and soil fluxes are solved, e.g., the temperature inputs or assumptions used for each source. Refer to Gal et al., (2026, in prep) sections 2.1.1 through 2.1.3 for 3SEB model formulation differences. Please note that this model has not been extensively validated in all cropping systems and climates.
+These formulations differ in how the intercrop canopy and soil fluxes are solved, e.g., the temperature inputs or assumptions used for each source. Refer to Gal et al., (2026, in prep) sections 2.1.1 through 2.1.3 for 3SEB model formulation differences.
+
+<ins>***Important:***</ins>
+*While UAV technology can provide very high spatial resolution, we have to be aware that 3SEB, as well as most of the resistance-based energy balance models, must be applied at an adequate spatial domain to comply with the assumptions and the physical formulations inherent in it. Therefore, **<ins>it is not possible to run 3SEB at leaf-level scale (i.e. 10 cm)</ins>**, as the formulations of radiative transfer and turbulent exchange that it relies upon, require 3SEB to be run at a scale in the order of meters. This is also a work in progress so we are happy to receive any feedback! py3SEB-UAV is a new development may need further refinements and testing in other environments.*
+
+
 
 <br>
 
